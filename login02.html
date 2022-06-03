@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.js">
+</head>
+<body>
+    
+</body>
+</html>
+
+<script language="JavaScript">
+	function Login(){
+		var done=0;
+		var usuario=document.login-inputs.usuario.value;
+		usuario=usuario.toLowerCase();
+		var senha=document.login-inputs.senha.value;
+		seha=senha.toLowerCase();
+		if (usuario=="admin" && senha=="admin") {
+			window.location="/p/admin.html"; done=1;
+		}
+		if (done==0) { alert("Dados incorretos, tente novamente"); }
+	}
+	</script>
